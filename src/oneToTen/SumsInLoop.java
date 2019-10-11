@@ -2,6 +2,8 @@ package oneToTen;
 
 import java.util.Scanner;
 
+//test
+
 public class SumsInLoop {
 	
 	public static int[] SumArrays(int[] a, int[] b)  {
