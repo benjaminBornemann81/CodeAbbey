@@ -12,7 +12,7 @@ public class SumsInLoop {
 		}
 		
 		return c;
-	}
+	} // SumArrays Ende
 	
 	public static String Ausgabe(int[] a)  {
 		String ausgabe = "";
@@ -20,7 +20,7 @@ public class SumsInLoop {
 			ausgabe += (a[i] + " ");
 		}
 		return ausgabe;
-	}
+	} // Ausgabe Ende
 
 	
 	// -------------------- main ----------------------------------
@@ -51,6 +51,15 @@ public class SumsInLoop {
 		int[] sum = SumArrays(arr1, arr2);
 		
 		// Ausgabe
+		System.out.println();
+		System.out.println("data: ");
+		System.out.println(anzahl);
+		for(int i = 0; i < anzahl; i++)  {
+			System.out.println(arr1[i] + " " + arr2[i]);
+		}
+		
+		System.out.println();
+		System.out.println("answer: ");
 		System.out.println(Ausgabe(sum));
 		
 		eingabe.close();

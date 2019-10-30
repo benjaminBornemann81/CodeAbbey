@@ -47,7 +47,7 @@ public class MaximumOfArray {
 		
 		//---------------------Ausgabe Testwerte zur Kontrolle---------------------
 		for (int i = 0; i < array.length; i++)  {
-			System.out.println(array[i]);
+			System.out.print(array[i] + " ");
 		}
 		
 		//---------------Methodenaufrufe------------------------------
@@ -57,6 +57,7 @@ public class MaximumOfArray {
 		
 		//---------------Ausgabe----------------------------------------
 		
+		System.out.println();
 		System.out.println("answer:");
 		System.out.print(max);
 		System.out.print(" ");

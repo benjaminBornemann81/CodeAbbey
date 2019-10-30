@@ -10,14 +10,14 @@ public class SumInLoop {
 			summe += a[i];
 		}
 		return summe;
-	}
+	} // ArraySum Ende
 	
-		
+	//------------------------------main-------------------------------	
 	public static void main(String[] args) {
 		
 		Scanner eingabe = new Scanner(System.in);
 		
-		System.out.print("Menge: ");
+		System.out.print("Menge: \n");
 		int anzahl = eingabe.nextInt();
 		
 		int[] array = new int[anzahl];

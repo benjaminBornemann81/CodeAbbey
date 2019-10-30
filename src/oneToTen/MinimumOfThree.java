@@ -16,14 +16,14 @@ public class MinimumOfThree {
 			}
 		}
 		return min;
-	}
+	} // MinimumThree Ende
 	
 	//-------------------main--------------------------	
 	public static void main(String[] args) {
 		Scanner eingabe = new Scanner(System.in);
 		
 		//---------------Initialisierung---------------
-		System.out.print("Menge der Paare: ");
+		System.out.print("Menge der Tripel: ");
 		int anzahl = eingabe.nextInt();
 		int[] a = new int[anzahl];
 		int[] b = new int[anzahl];
@@ -33,8 +33,11 @@ public class MinimumOfThree {
 		
 		//---------------Befüllen des Felder-------
 		for (int i = 0; i < anzahl; i++)  {
+			System.out.print("a" + (i+1) + ": ");
 			a[i] = eingabe.nextInt();
+			System.out.print("b" + (i+1) + ": ");
 			b[i] = eingabe.nextInt();
+			System.out.print("c" + (i+1) + ": ");
 			c[i] = eingabe.nextInt();
 			}
 		
@@ -48,6 +51,7 @@ public class MinimumOfThree {
 		
 		
 		//---------------Ausgabe------------------------
+		System.out.println();
 		System.out.println("answer:");
 		for (int i = 0; i < anzahl; i++)  {
 			System.out.print(d[i] + " ");
@@ -56,4 +60,4 @@ public class MinimumOfThree {
 		
 	} //----------------main Ende-------------------
 
-} //--------------------Klassenende-----------------
+} // MinimumOfThree Ende

@@ -49,7 +49,7 @@ public class SumOfDigits {
 		System.out.print(Quersumme(MusterZahl(arr1)) + " ");
 		System.out.print(Quersumme(MusterZahl(arr2)) + " ");
 		System.out.print(Quersumme(MusterZahl(arr3)) + " ");
-
+		
 	} // main Ende
 
 } // SumOfDigits Ende

@@ -18,7 +18,9 @@ public class MinimumOfTwo {
 		
 		//---------------Befüllen des Ergebnisses-------
 		for (int i = 0; i < anzahl; i++)  {
+			System.out.print("a" + (i+1) + ": ");
 			a[i] = eingabe.nextInt();
+			System.out.print("b" + (i+1) + ": ");
 			b[i] = eingabe.nextInt();
 			
 			c[i] = Math.min(a[i], b[i]);
