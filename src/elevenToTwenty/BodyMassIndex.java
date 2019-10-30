@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class BodyMassIndex {
 
 	static String BMI(double gewicht, double groesse)  {
-		double bmi = (gewicht / (groesse*100 * groesse*100));
+		double bmi = (gewicht / (groesse * groesse));
 		String bewertung;
 		
 		if (bmi < 18.5)  {
@@ -40,7 +40,6 @@ public class BodyMassIndex {
 		
 		//----------------------------Verarbeitung----------------------------------
 		String[] ergebnis = new String[anzahl];
-		
 		for (int i = 0; i < anzahl; i++)  {
 			ergebnis[i] = BMI(werte[i][0], werte[i][1]);
 		}
@@ -49,7 +48,6 @@ public class BodyMassIndex {
 		for (String wert : ergebnis)  {
 			System.out.print(wert + " ");
 		}
-		
 	} // main Ende
 
 } // BodyMassIndex Ende
