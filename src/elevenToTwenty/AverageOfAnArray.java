@@ -42,6 +42,6 @@ public class AverageOfAnArray {
 		System.out.print(ArrayAverage(arr1) + " ");
 		System.out.print(ArrayAverage(arr2) + " ");
 		System.out.print(ArrayAverage(arr3) + " ");
-	}
+	} // main Ende
 
-}
+} // AverageOfAnArray Ende
