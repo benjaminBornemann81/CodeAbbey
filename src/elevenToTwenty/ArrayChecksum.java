@@ -2,8 +2,6 @@ package elevenToTwenty;
 
 public class ArrayChecksum {
 
-	static int anzahl = 6;
-	
 	public static long Checksum(int[] arr)  {
 		long result = 0;
 		for (int i = 0; i < arr.length; i++)  {
@@ -18,6 +16,8 @@ public class ArrayChecksum {
 	public static void main(String[] args) {
 		// Eingabge
 		int[] werte = new int[] {3, 1, 4, 1, 5, 9};
+		int anzahl = werte.length;
+		
 		// Ausgabe
 		System.out.println("input data: ");
 		System.out.println(anzahl);

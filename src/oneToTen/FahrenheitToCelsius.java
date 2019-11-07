@@ -2,8 +2,6 @@ package oneToTen;
 
 public class FahrenheitToCelsius {
 
-	static int[] werte = new int[] {495, 353, 168, -39, 22};
-	
 	public static int FtoC (double f)  {
 		double c = (f - 32) * 5/9;
 		return Rounding.Runden(c);
@@ -11,6 +9,8 @@ public class FahrenheitToCelsius {
 	
 	//------------------------------main---------------------------------
 	public static void main(String[] args) {
+		int[] werte = new int[] {495, 353, 168, -39, 22};
+		
 		System.out.println("data: ");
 		
 		System.out.print(werte.length + " ");

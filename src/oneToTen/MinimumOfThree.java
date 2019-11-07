@@ -31,7 +31,7 @@ public class MinimumOfThree {
 		int[] d = new int[anzahl];
 		
 		
-		//---------------Befüllen des Felder-------
+		//---------------Befüllen der Felder-------
 		for (int i = 0; i < anzahl; i++)  {
 			System.out.print("a" + (i+1) + ": ");
 			a[i] = eingabe.nextInt();

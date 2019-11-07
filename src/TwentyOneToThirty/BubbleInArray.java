@@ -4,8 +4,6 @@ import elevenToTwenty.ArrayChecksum;
 
 public class BubbleInArray {
 	
-	
-
 	private static int swap = 0;
 	
 	public static int[] BubbleOnceArray(int[] arr)  {

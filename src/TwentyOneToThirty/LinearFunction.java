@@ -23,25 +23,24 @@ public class LinearFunction {
 	//--------------------------main------------------------------------
 	public static void main(String[] args) {
 		// Eingabe
-		int[] werte1 = new int[] {0, 0, 1, 1};
-		int[] werte2 = new int[] {1, 0, 0, 1};
+		int[][] werte = new int[][] {{0, 0, 1, 1}, {1, 0, 0, 1}};
+		int anzahl = werte.length;
 		
 		System.out.println("input data:");
-		for (int i : werte1)  {
-			System.out.print(i+" ");
+		System.out.println(anzahl);
+		for (int i = 0; i < werte.length; i++)  {
+			for (int j = 0; j < werte[i].length; j++)  {
+				System.out.print(werte[i][j] + " ");
+			}
+			System.out.println();
 		}
-		System.out.println();
-		for (int i : werte2)  {
-			System.out.print(i+" ");
-		}
 		
-		
-		
-		System.out.println();
 		System.out.println();
 		System.out.println("answer: ");
- 		System.out.print(BaueFunktion(werte1[0], werte1[1], werte1[2], werte1[3])+" ");
- 		System.out.print(BaueFunktion(werte2[0], werte2[1], werte2[2], werte2[3]));
+		
+		for (int i = 0; i < werte.length; i++)  {
+			System.out.print(BaueFunktion(werte[i][0], werte[i][1], werte[i][2], werte[i][3])+" ");
+		}
 	} // main Ende
 
 } // LinearFunction Ende

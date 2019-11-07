@@ -2,8 +2,6 @@ package TwentyOneToThirty;
 
 public class CollatzSequence {
 	
-	static int anzahl = 3;
-	
 	static int ColSeq(int zahl)  {
 		int result = zahl, count = 0;
 		while (result != 1)  {
@@ -20,6 +18,8 @@ public class CollatzSequence {
 	//-------------------------main---------------------------
 	public static void main(String[] args) {
 		int[] werte = new int[] {2, 15, 97};
+		int anzahl = werte.length;
+		
 		System.out.println("input data: ");
 		System.out.println(anzahl);
 		for (int i : werte)  {

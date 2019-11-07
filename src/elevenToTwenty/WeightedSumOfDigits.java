@@ -5,23 +5,22 @@ import java.util.Collections;
 
 public class WeightedSumOfDigits {
 
-	static int anzahl = 3;
-	
 	static int WSD(int zahl)  {
 		ArrayList<Integer> digits = new ArrayList<Integer>();
 		int vorne = zahl, summe = 0;
 		
+		// Befüllen der Liste Ziffernweise von hinten nach vorne
 		if (vorne >= 0)  {
 			while(vorne > 0)  {
 				digits.add(vorne % 10);
 				vorne /= 10;
 			}
-			
+			// Liste Umkehren
 			Collections.reverse(digits);
+			// Gewichtete Berechnung
 			for (int i = 0; i < digits.size(); i++)  {
 				summe += ((i+1) * digits.get(i));
 			}
-						
 			return summe;
 		} else {
 			return 0; 
@@ -31,6 +30,7 @@ public class WeightedSumOfDigits {
 	//---------------------------------main--------------------------------
 	public static void main(String[] args) {
 		int[] werte = new int[] {9, 15, 1776};
+		int anzahl = werte.length;
 		
 		System.out.println("input data: ");
 		System.out.println(anzahl);

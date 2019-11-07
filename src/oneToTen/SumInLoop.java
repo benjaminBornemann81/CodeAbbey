@@ -28,7 +28,8 @@ public class SumInLoop {
 			array[i] = eingabe.nextInt();
 		}
 		
-		System.out.println("answer: " + ArraySum(array));
+		System.out.println();
+		System.out.println("answer: \n" + ArraySum(array));
 		eingabe.close();
 	}
 

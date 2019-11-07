@@ -44,6 +44,7 @@ public class Rounding {
 		eingabe.close();
 		
 		// ----------------Ausgabe---------------------------------
+		System.out.println();
 		System.out.println("answer:");
 		for (int i : ergebnis)  {
 			System.out.print(i + " ");

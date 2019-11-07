@@ -19,8 +19,8 @@ public class ArrayCounters {
 		
 		// Ausgabe
 		System.out.println("data input: ");
-		System.out.print(werte.length + " ");
-		System.out.println(MaximumOfArray.MaxOfArray(werte));
+		System.out.print(werte.length + " " + MaximumOfArray.MaxOfArray(werte));
+		System.out.println();
 		for (int i : werte)  {
 			System.out.print(i + " ");
 		}

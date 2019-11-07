@@ -4,8 +4,6 @@ import java.util.Random;
 
 public class DiceRolling {
 
-	static int anzahl = 6;
-	
 	static int RNG2Dice(double n)  {
 		int wurf;
 		wurf = (int)(n * 6);
@@ -16,7 +14,9 @@ public class DiceRolling {
 	//--------------------------------main--------------------------------
 	public static void main(String[] args) {
 		// Eingabe
+		int anzahl = 6;
 		double[] werte = new double[anzahl];
+				
 		for (int i = 0; i < werte.length; i++)  {
 			werte[i] = new Random().nextDouble();
 		}

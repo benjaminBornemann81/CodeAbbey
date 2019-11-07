@@ -2,9 +2,6 @@ package oneToTen;
 
 public class VowelCount {
 	
-	static int zeilenZahl = 4;
-	static String[] zeilen = new String[zeilenZahl]; 
-		
 	static int CountVowels(String str)  {
 		int count = 0;
 		
@@ -37,21 +34,20 @@ public class VowelCount {
 	
 	// -----------------------------main-------------------------
 	public static void main(String[] args) {
-		zeilen[0] = "abracadabra";
-		zeilen[1] = "pear tree";
-		zeilen[2] = "o a kak ushakov lil vo kashu kakao";
-		zeilen[3] = "my pyx";
+		String[] werte = new String[] {"abracadabra", "pear tree", "o a kak ushakov lil vo kashu kakao", "my pyx"}; 
+		int zeilenZahl = werte.length;
+		
  				
 		System.out.println("input data: ");
 		System.out.println(zeilenZahl);
 		
-		for(String str : zeilen)  {
+		for(String str : werte)  {
 			System.out.println(str);
 		}
 		
 		System.out.println();
 		System.out.println("answer: ");
-		for(String str : zeilen)  {
+		for(String str : werte)  {
 			System.out.print(CountVowels(str) + " ");
 		}
 

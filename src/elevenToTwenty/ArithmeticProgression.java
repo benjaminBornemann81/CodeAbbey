@@ -1,11 +1,6 @@
 package elevenToTwenty;
 
-import java.util.Scanner;
-
 public class ArithmeticProgression {
-	
-	static int AnzahlTestfälle = 2;
-	Scanner Eingabe = new Scanner(System.in);
 	
 	static int FolgenSumme(int a, int b, int n)  {
 		int summe = 0;

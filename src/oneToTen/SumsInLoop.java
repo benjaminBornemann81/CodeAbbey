@@ -34,18 +34,13 @@ public class SumsInLoop {
 		int[] arr1 = new int[anzahl];
 		int[] arr2 = new int[anzahl];
 		
-		// Befüllen des ersten Feldes
+		// Befüllen der Felder
 		for (int i = 0; i < anzahl; i++)  {
-			System.out.print("Eingabe arr1: ");
+			System.out.print("Eingabe arr1."+(i+1)+": ");
 			arr1[i] = eingabe.nextInt();
-		}
-		
-		// Befüllen des zweiten Feldes
-		for (int i = 0; i < anzahl; i++)  {
-			System.out.print("Eingabe arr2: ");
+			System.out.print("Eingabe arr2."+(i+1)+": ");
 			arr2[i] = eingabe.nextInt();
 		}
-		
 		
 		// Berechnung
 		int[] sum = SumArrays(arr1, arr2);

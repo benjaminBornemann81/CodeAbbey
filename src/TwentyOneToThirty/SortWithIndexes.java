@@ -1,6 +1,5 @@
 package TwentyOneToThirty;
 
-
 public class SortWithIndexes {
 
 	public static String SortWithIndex(int[] arr)  {
@@ -11,10 +10,10 @@ public class SortWithIndexes {
 			alt[i] = arr[i];
 		}
 		
-		int[] neu = BubbleSort.BubbleSortArray(arr);
+		int[] neu = BubbleSort.BubbleSortArray(alt);
 		
-		for (int i = 0; i < arr.length; i++)  {
-			for	(int j = 0; j <arr.length; j++)  {
+		for (int i = 0; i < alt.length; i++)  {
+			for	(int j = 0; j <alt.length; j++)  {
 				if (neu[i] == alt[j])  {
 					result += j+1 + " ";
 				}
