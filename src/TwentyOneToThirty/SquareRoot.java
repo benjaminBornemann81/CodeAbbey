@@ -2,12 +2,17 @@ package TwentyOneToThirty;
 
 public class SquareRoot {
 
-	public static int SquareRT(int a, int b)  {
-		int sqrt = 0;
+	public static double SquareRT(int a, int b)  {
 		
+		double r = 1;
+		double d = 0;
 		
-		return sqrt;
-	}
+		for (int i = 0; i < b; i++)  {
+			d = a / r;
+			r = (d + r) / 2;	 
+		}
+		return r;
+	} // SquareRT Ende
 	
 	
 	//------------------------------main------------------------------------

@@ -34,6 +34,9 @@ public class LinearFunction {
 		for (int i : werte2)  {
 			System.out.print(i+" ");
 		}
+		
+		
+		
 		System.out.println();
 		System.out.println();
 		System.out.println("answer: ");
