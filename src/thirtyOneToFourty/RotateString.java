@@ -21,7 +21,7 @@ public class RotateString {
 			} 
 		}
 		return result;
-	} // StringRotator Ende
+	}
 	
 	//--------------------------main---------------------------------------
 	public static void main(String[] args) {
@@ -45,6 +45,6 @@ public class RotateString {
 		for (int i = 0; i < anzahl; i++)  {
 			System.out.print(StringRotator(Integer.parseInt(werte[i][0]), werte[i][1]) + " ");
 		}
-	} // main Ende
+	}
 
-} // RotateString Ende
+}
