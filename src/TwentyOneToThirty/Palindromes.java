@@ -1,21 +1,35 @@
 package TwentyOneToThirty;
 
 public class Palindromes {
-
-	public static char CheckPalindrome(String str)  {
-		char result='Y';
+	/* reviewed by Martin */
+	
+	/* Alte Lösung */
+//	public static char CheckPalindrome(String str)  {
+//		char result='Y';
+//		String umgewandelt = str.replaceAll("[^A-Za-z]","").toLowerCase();
+//		
+//		while (umgewandelt.length() > 1)  {
+//			if (umgewandelt.charAt(0) == umgewandelt.charAt(umgewandelt.length()-1))  {
+//				umgewandelt = umgewandelt.substring(1, umgewandelt.length()-1);
+//			} else {
+//				result='N';
+//				break;
+//			}
+//		}
+//		return result;
+	
+	/* Neue Lösung */
+	public static Boolean CheckPalindrome(String str)  {
+		Boolean result=true;
 		String umgewandelt = str.replaceAll("[^A-Za-z]","").toLowerCase();
 		
-		while (umgewandelt.length() > 1)  {
-			if (umgewandelt.charAt(0) == umgewandelt.charAt(umgewandelt.length()-1))  {
-				umgewandelt = umgewandelt.substring(1, umgewandelt.length()-1);
-			} else {
-				result='N';
-				break;
+		for (int i = 0; i < umgewandelt.length(); i++) {
+			if (umgewandelt.charAt(i) != umgewandelt.charAt(umgewandelt.length()-i-1))  {
+				return false;
 			}
 		}
 		return result;
-	} // CheckPalindrome Ende
+	}
 	
 	//-----------------------------main--------------------------------------
 	public static void main(String[] args) {
@@ -34,6 +48,6 @@ public class Palindromes {
 		for (int i = 0; i < werte.length; i++)  {
 			System.out.print(CheckPalindrome(werte[i]) + " ");
 		}
-	} // main Ende
+	} 
 
-} // Palindromes Ende
+} 
