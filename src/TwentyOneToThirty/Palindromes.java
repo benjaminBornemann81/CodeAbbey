@@ -46,7 +46,7 @@ public class Palindromes {
 		System.out.println();
 		System.out.println("answer: ");
 		for (int i = 0; i < werte.length; i++)  {
-			System.out.print(CheckPalindrome(werte[i]) + " ");
+			System.out.print((CheckPalindrome(werte[i])  ? "Y" : "N") + " ");
 		}
 	} 
 
