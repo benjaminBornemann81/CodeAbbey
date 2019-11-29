@@ -5,28 +5,30 @@ import java.util.LinkedList;
 public class NeumannsRandomGenerator {
 
 	public static int RNGGen(int a)  {
-		int result = 0;
+		
+		int zwischen = 88888;
+		
 		LinkedList<Integer> list = new LinkedList<Integer>();
 		
-		result = a*a;
-		System.out.println(a);
-		result /= 100;
-		System.out.println(a);
-		result %= 10000;
-		System.out.println(a);
-		list.add(result);
-		
-		return result;
-	} // RNGGen Ende
+		while (!list.contains(zwischen)){
+			zwischen = a*a;
+			zwischen /= 100;
+			zwischen %= 10000;
+			list.add(zwischen);
+		}
+		return zwischen;
+	} 
 	
-	public static String PruefeUndAuffuellen(String str)  {
-		String result = str;
+	public static String PruefeUndAuffuellen(int str)  {
+		
+		
+		String result = Integer.toString(str);
 		while (result.length() < 8)  {
-			result = " " + result;
+			result = "0" + result;
 		}
 		
 		return result;
-	} //PruefeUndAuffuellen Ende
+	} 
 	
 	
 	//-------------------------main-----------------------------------
@@ -45,22 +47,26 @@ public class NeumannsRandomGenerator {
 		System.out.println("answer: ");
 		
 		// Ausgabe
-		for (String i : werte)  {
-			System.out.print(RNGGen(Integer.parseInt(i)) + " ");
-		}
+//		for (String i : werte)  {
+//			System.out.print(RNGGen(Integer.parseInt(i)) + " ");
+//		}
 		System.out.println();
 		
 		System.out.println("----------------------------");
 		
-		int a = 1;
-		int result = a*a;
-		System.out.println(a);
-		result /= 100;
-		System.out.println(a);
-		result %= 10000;
-		System.out.println(a);
+		System.out.print(RNGGen(Integer.parseInt(werte[2])) + " ");
+		
+//		int a = Integer.parseInt(werte[0]);
+//		int result = a*a;
+//		System.out.println(a);
+//		String bla = PruefeUndAuffuellen(result);
+//		System.out.println(bla);
+//		result /= 100;
+//		System.out.println(a);
+//		result %= 10000;
+//		System.out.println(a);
 		
 
-	} // main Ende
+	}
 
-} // NeumannsRandomGenerator Ende
+}
